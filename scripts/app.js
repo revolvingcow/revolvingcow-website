@@ -16,9 +16,6 @@ angular.module("farm", [])
         .when("/contact", {
             templateUrl: "partials/contact.html"
         })
-        .when("/about", {
-            templateUrl: "partials/about.html"
-        })
         .otherwise({ 
         	redirectTo: "/" 
         });
