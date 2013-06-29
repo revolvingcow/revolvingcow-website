@@ -2,8 +2,8 @@
 <html ng-app="farm">
 	<head>
 		<meta charset="utf-8" />
-	    <meta name="description" content="" />
 	    <meta name="author" content="Revolving Cow, LLC" />
+	    <meta name="description" content="" />
 
     	<title>Revolving Cow</title>
 		<link href="https://plus.google.com/114406518580005058024" rel="publisher" />
@@ -26,24 +26,28 @@
 			<p>We recommend upgrading to the latest <a href="//ie.microsoft.com" title="Microsoft Internet Explorer">Internet Explorer</a>, <a href="//chrome.google.com" title="Google Chrome">Google Chrome</a>, or <a href="//mozilla.org/firefox" title="Firefox">Firefox</a>. If you are using IE 9 or later, make sure you turn off "Compatibility View".</p>
 		</div>
 		
-		<div id="logo"><a href="#/" title="Revolving Cow"><img src="" /></a></div>
-
 		<header id="menu">
 			<!-- Basic navigation menu -->
 			<nav>
-				<a class="first" href="#/services" title="Services">Services</a>
+				<a class="first" href="/" title="Home">Home</a>
 				<a href="#/company" title="Company">Company</a>
-				<a href="http://blog.revolvingcow.com" title="Blog">The Pasture</a>
+				<a href="#/services" title="Services">Services</a>
+				<a href="http://blog.revolvingcow.com" title="Blog">Blog</a>
+				<a href="mailto:info@revolvingcow.com" title="Contact Us">Contact</a>
 			</nav>
 		</header>
 
 		<div id="container">
-			<!-- Where the magic happens -->
-			<div ng-view></div>
+			<div id="header">
+				<div id="logo"><a href="#/" title="Revolving Cow"><img src="blank.gif" alt="Revolving Cow" /></a></div>
+			</div>
+			<div id="content">
+				<div ng-view></div>
+			</div>
 		</div>
 
 		<footer>
-			<div id="columns">
+			<!--<div id="columns">
 				<div class="col">
 					<h4>Products</h4>
 
@@ -55,23 +59,17 @@
 					<h4><a href="#/company" title="Company">Company</a></h4>
 
 					<ul>
-						<li><a href="#/company" title="Overview">Overview</a></li>
 						<li><a href="#/about" title="About Us">About Us</a></li>
-						<li><a href="#/services" title="Services">Services</a></li>
-						<li><a href="http://blog.revolvingcow.com" title="Press">Press</a></li>
-						<li><a href="#/contact" title="Contact">Contact</a></li>
 					</ul>
 				</div>
-				<div class="col">
-					<h4>Connect</h4>
+			</div>-->
 
-					<ul>
-						<li><a href="//plus.google.com/114406518580005058024" title="Google&#43;" rel="publisher">Google&#43;</a></li>
-						<li><a href="//twitter.com/RevolvingCow" title="&#64;RevolvingCow">Twitter</a></li>
-			            <li><a href="http://blog.revolvingcow.com" title="Blog">Blog</a></li>
-			            <li><a href="mailto:info@revolvingcow.com" title="Email me">Email</a></li>
-		        	</ul>
-				</div>
+			<div id="social">
+				<ul>
+					<li><a href="//plus.google.com/114406518580005058024" title="Google&#43;" rel="publisher">Google&#43;</a></li>
+					<li><a href="//twitter.com/RevolvingCow" title="&#64;RevolvingCow">Twitter</a></li>
+					<li><a href="" title="LinkedIn">LinkedIn</a></li>
+				</ul>
 			</div>
 
 			<!-- Copyright information -->
